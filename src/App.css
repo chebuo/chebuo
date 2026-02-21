@@ -5,17 +5,26 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.slider{
+  overflow:hidden;
+  white-space:nowrap;
+  width:100%;
+  background:#111;
+  padding:10px 0;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+.slide-img{
+  width:150px;
+  margin:0 20px;
+  border-radius:12px;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+@keyframes scroll{
+  from{
+    transform:translateX(0);
+  }
+  to{
+    transform:translateX(-50%);
+  }
 }
 
 @keyframes logo-spin {
