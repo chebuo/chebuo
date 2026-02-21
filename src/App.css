@@ -12,7 +12,11 @@
   background:#111;
   padding:10px 0;
 }
-
+.slide-track {
+  display: flex;
+  width: calc(200px * 16);
+  animation: scroll 20s linear infinite;
+}
 .slide-img{
   width:150px;
   margin:0 20px;
