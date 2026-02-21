@@ -9,6 +9,7 @@ function App() {
   return (
     <>
       <div>
+        <p>chebuoのポートフォリオ</p>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -25,117 +26,6 @@ function App() {
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
       </div>
-      <p className="read-the-docs">
-        tomatotabetai
-      </p>
-      <p className="read-the-docs">
-        tomatotabetai
-      </p>
-      <p className="read-the-docs">
-        tomatotabetai
-      </p>
-      <p className="read-the-docs">
-        tomatotabetai
-      </p>
-      <p className="read-the-docs">
-        tomatotabetai
-      </p>
-      <p className="read-the-docs">
-        tomatotabetai
-      </p>
-      <p className="read-the-docs">
-        tomatotabetai
-      </p>
-      <p className="read-the-docs">
-        tomatotabetai
-      </p>
-      <p className="read-the-docs">
-        tomatotabetai
-      </p>
-      <p className="read-the-docs">
-        tomatotabetai
-      </p>
-      <p className="read-the-docs">
-        tomatotabetai
-      </p>
-      <p className="read-the-docs">
-        tomatotabetai
-      </p>
-      <p className="read-the-docs">
-        tomatotabetai
-      </p>
-      <p className="read-the-docs">
-        tomatotabetai
-      </p>
-      <p className="read-the-docs">
-        tomatotabetai
-      </p>
-      <p className="read-the-docs">
-        tomatotabetai
-      </p>
-      <p className="read-the-docs">
-        tomatotabetai
-      </p>
-      <p className="read-the-docs">
-        tomatotabetai
-      </p>
-      <p className="read-the-docs">
-        tomatotabetai
-      </p>
-      <p className="read-the-docs">
-        tomatotabetai
-      </p>
-      <p className="read-the-docs">
-        tomatotabetai
-      </p>
-      <p className="read-the-docs">
-        tomatotabetai
-      </p>
-      <p className="read-the-docs">
-        tomatotabetai
-      </p>
-      <p className="read-the-docs">
-        tomatotabetai
-      </p>
-      <p className="read-the-docs">
-        tomatotabetai
-      </p>
-      <p className="read-the-docs">
-        tomatotabetai
-      </p>
-      <p className="read-the-docs">
-        tomatotabetai
-      </p>
-      <p className="read-the-docs">
-        tomatotabetai
-      </p>
-      <p className="read-the-docs">
-        tomatotabetai
-      </p>
-      <p className="read-the-docs">
-        tomatotabetai
-      </p>
-      <p className="read-the-docs">
-        tomatotabetai
-      </p>
-      <p className="read-the-docs">
-        tomatotabetai
-      </p>
-      <p className="read-the-docs">
-        tomatotabetai
-      </p>
-      <p className="read-the-docs">
-        tomatotabetai
-      </p>
-      <p className="read-the-docs">
-        tomatotabetai
-      </p>
-      <p className="read-the-docs">
-        tomatotabetai
-      </p>
-      <p className="read-the-docs">
-        tomatotabetai
-      </p>
       <p className="read-the-docs">
         tomatotabetai
       </p>
