@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import chebu from '/assets/chebu_fine.jpg'
+import chebu from 'assets/chebu_fine.jpg'
 
 function App() {
   const [count, setCount] = useState(0)
