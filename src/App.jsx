@@ -9,15 +9,15 @@ function App() {
     <>
     <div className="slider">
       <div>
+      {Array.from({ length: 8 }).map((_, i) => (
       <a 
         href="https://ja.wikipedia.org/wiki/%E3%83%81%E3%82%A7%E3%83%96%E3%83%A9%E3%83%BC%E3%82%B7%E3%82%AB"
         target="_blank"
         rel="noopener noreferrer"
         >
-        {Array.from({ length: 8 }).map((_, i) => (
-            <img key={i} src={chebu} alt="chebu" className="slide-img" />
-          ))}
-      </a>
+          <img key={i} src={chebu} alt="chebu" className="slide-img" />     
+        </a>
+      ))}
       </div>
     </div>
       <h1>chebuoのポートフォリオ</h1>
