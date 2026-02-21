@@ -8,7 +8,11 @@ function App() {
   return (
     <>
     <div>
-      <a href="https://ja.wikipedia.org/wiki/%E3%83%81%E3%82%A7%E3%83%96%E3%83%A9%E3%83%BC%E3%82%B7%E3%82%AB">
+      <a 
+        href="https://ja.wikipedia.org/wiki/%E3%83%81%E3%82%A7%E3%83%96%E3%83%A9%E3%83%BC%E3%82%B7%E3%82%AB"
+        target="_blank"
+        rel="noopener noreferrer"
+        >
         <img src={chebu} alt="chebu" />
       </a>
       <h1>chebuoのポートフォリオ</h1>
