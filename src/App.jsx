@@ -68,7 +68,7 @@ function App() {
         rel="noopener noreferrer"
         >
           <img src={github} alt="github_icon" className="icon"/>
-          <p>github</p>
+          <p className="icon-text">github</p>
         </a>
         <a 
         href="https://x.com/chebuo_"
@@ -76,7 +76,7 @@ function App() {
         rel="noopener noreferrer"
         >
           <img src={x} alt="x_icon" className="icon"/>
-          <p>X</p>
+          <p className="icon-text">X</p>
         </a>
         <a 
         href="https://unityroom.com/users/chebuo"
@@ -84,7 +84,7 @@ function App() {
         rel="noopener noreferrer"
         >
           <img src={unityroom} alt="unityroom_icon" className="icon"/>
-          <p>UnityRoom</p>
+          <p className="icon-text">UnityRoom</p>
         </a>
       </div>
       <h2>--成果物一覧--</h2> 
