@@ -1,5 +1,7 @@
 import { useRef, useState ,useEffect} from 'react'
+import {Routes,Route,Link} from 'react-router-dom'
 import './App.css'
+import ProductList from './productList.jsx'
 import History from './history.jsx'
 import chebu from './assets/chebu_fine.jpg'
 import chebu_yellow from './assets/yellow_chebu.jpg'
@@ -36,6 +38,8 @@ function App() {
   const repeatSlides=Array(12).fill(slides).flat();
   const loopSlides=[...repeatSlides, ...repeatSlides];
   return (
+    <Routes>
+      <Route path="/" element={
     <>
     <div className="slider">
       <div 
@@ -56,7 +60,7 @@ function App() {
       </div>
     </div>
       <h1>chebuoのポートフォリオへようこそ</h1>
-      <h2>SNSアカウント一覧</h2>
+      <h2>--SNSアカウント一覧--</h2>
       <div className="iconList">
         <a 
         href="https://github.com/chebuo"
@@ -83,12 +87,12 @@ function App() {
           <p>UnityRoom</p>
         </a>
       </div>
-      <h2>成果物一覧</h2>
-      <button onClick={()=>{window.location.href="/history.jsx"}}>
-        <h2>活動記録をみる</h2>
-      </button>
-
-    </>
+      <h2>--成果物一覧--</h2> 
+      <ProductList/>
+    </>   
+    }/>
+    <Route path="/history" element={<History/>}/>
+    </Routes>
   )
 }
 
