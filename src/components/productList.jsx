@@ -11,12 +11,18 @@ function ProductList(){
                 <h3>活動記録をみる→</h3>
             </button>  
         </Link>
-        <div>
+        <div className="product-list">
         <ProductItem
             title='石鹸スライダー'
             img={soapslider_icon}
             description='滑り続ける石鹸を障害物をよけるゲームです。'
             link='/soapslider'
+            />
+        <ProductItem
+            title='大きなカブトムシ'
+            img={bigbeetle}
+            description='大きなカブを食べられないようにカブトムシを倒すタワーディフェンスとシューティングゲームを組み合わせたゲームです。'
+            link='https://unityroom.com/games/bigbeetle'
             />
         <ProductItem
             title='大きなカブトムシ'
