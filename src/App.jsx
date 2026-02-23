@@ -1,8 +1,8 @@
 import { useRef, useState ,useEffect} from 'react'
 import {Routes,Route,Link} from 'react-router-dom'
 import './App.css'
-import ProductList from './productList.jsx'
-import History from './history.jsx'
+import ProductList from './components/productList.jsx'
+import History from './pages/history.jsx'
 import chebu from './assets/chebu_fine.jpg'
 import chebu_yellow from './assets/yellow_chebu.jpg'
 import github from './assets/github_icon.png'
@@ -62,30 +62,21 @@ function App() {
       <h1>chebuoのポートフォリオへようこそ</h1>
       <h2>--SNSアカウント一覧--</h2>
       <div className="iconList">
-        <a 
-        href="https://github.com/chebuo"
-        target="_blank"
-        rel="noopener noreferrer"
-        >
-          <img src={github} alt="github_icon" className="icon"/>
-          <p className="icon-text">github</p>
-        </a>
-        <a 
-        href="https://x.com/chebuo_"
-        target="_blank"
-        rel="noopener noreferrer"
-        >
-          <img src={x} alt="x_icon" className="icon"/>
-          <p className="icon-text">X</p>
-        </a>
-        <a 
-        href="https://unityroom.com/users/chebuo"
-        target="_blank"
-        rel="noopener noreferrer"
-        >
-          <img src={unityroom} alt="unityroom_icon" className="icon"/>
-          <p className="icon-text">UnityRoom</p>
-        </a>
+        <SNSIcon
+        img={github}
+        link="https://github.com/chebuo"
+        name="github"
+        />
+        <SNSIcon
+        img={x}
+        link="https://x.com/chebuo_"
+        name="X"
+        />
+        <SNSIcon
+        img={unityroom}
+        link="https://unityroom.com/users/chebuo"
+        name="UnityRoom"
+        />
       </div>
       <h2>--成果物一覧--</h2> 
       <ProductList/>
@@ -93,6 +84,19 @@ function App() {
     }/>
     <Route path="/history" element={<History/>}/>
     </Routes>
+  )
+}
+
+const SNSIcon=({img,link,name})=>{
+  return(
+    <a
+     href={link}
+     target="_blank"
+     rel="noopener noreferrer"
+     >
+      <img src={img} alt={`${name}_icon`} className="icon"/>
+      <p className="icon-text">{name}</p>
+     </a>
   )
 }
 

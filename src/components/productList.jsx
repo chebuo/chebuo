@@ -1,14 +1,14 @@
 import {Link} from 'react-router-dom'
-import './productList.css'
-import soapslider from './assets/soapslider_icon.jpg'
-import bigbeetle from './assets/chebu_fine.jpg'
+import '../styles/productList.css'
+import soapslider from '../assets/soapslider_icon.jpg'
+import bigbeetle from '../assets/chebu_fine.jpg'
 
 function ProductList(){
     return(
         <>
         <Link to="/history">      
-            <button>
-                <h3>活動記録をみる</h3>
+            <button className="history-button">
+                <h3>活動記録をみる→</h3>
             </button>  
         </Link>
         <div>
