@@ -1,6 +1,6 @@
 import {Link} from 'react-router-dom'
 import '../styles/productList.css'
-import soapslider from '../assets/soapslider_icon.jpg'
+import soapslider_icon from '../assets/soapslider_icon.jpg'
 import bigbeetle from '../assets/chebu_fine.jpg'
 
 function ProductList(){
@@ -14,9 +14,9 @@ function ProductList(){
         <div>
         <ProductItem
             title='石鹸スライダー'
-            img={soapslider}
+            img={soapslider_icon}
             description='滑り続ける石鹸を障害物をよけるゲームです。'
-            link='https://unityroom.com/games/soapslider'
+            link='/soapslider'
             />
         <ProductItem
             title='大きなカブトムシ'

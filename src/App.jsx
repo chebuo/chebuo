@@ -3,6 +3,7 @@ import {Routes,Route,Link} from 'react-router-dom'
 import './App.css'
 import ProductList from './components/productList.jsx'
 import History from './pages/history.jsx'
+import Soapslider from './games/soapslider/soapslider.jsx'
 import chebu from './assets/chebu_fine.jpg'
 import chebu_yellow from './assets/yellow_chebu.jpg'
 import github from './assets/github_icon.png'
@@ -83,6 +84,7 @@ function App() {
     </>   
     }/>
     <Route path="/history" element={<History/>}/>
+    <Route path="/soapslider" element={<Soapslider/>}></Route>
     </Routes>
   )
 }
