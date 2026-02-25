@@ -13,18 +13,22 @@ import unityroom from './assets/unityroom_icon.jpg'
 function App() {
   const trackRef=useRef(null);
   const [trackWidth,setTrackWidth]=useState(0);
-  useEffect(()=>{
-    const updateWidth=()=>{
-    if(trackRef.current)setTrackWidth(trackRef.current.scrollWidth/2);
+  useEffect(() => {
+  const updateWidth = () => {
+    if (trackRef.current) {
+      const width = trackRef.current.scrollWidth / 2;
+      console.log("measured width:", width);
+      setTrackWidth(width);
     }
-    updateWidth();
-    window.addEventListener('resize', updateWidth);
-    window.addEventListener('load', updateWidth);
-    return () =>{
-      window.removeEventListener('load', updateWidth);
-      window.removeEventListener('resize',updateWidth)
-    }
-  },[]);
+  };
+  updateWidth();
+  window.addEventListener("resize", updateWidth);
+
+  return () => {
+    window.removeEventListener("resize", updateWidth);
+  };
+}, []);
+
 
   const slides = [
   {
@@ -46,7 +50,7 @@ function App() {
       <div 
       ref={trackRef}
       className="slide-track"
-      style={{animation:trackWidth?`scroll ${(trackWidth*3)/1}s linear infinite`:'none'}}
+      style={{animation:trackWidth?`scroll ${(trackWidth)/30}s linear infinite`:'none'}}
       >
       {loopSlides.map((slide, i) => (
       <a 
@@ -61,7 +65,7 @@ function App() {
       </div>
     </div>
       <h1>chebuoのポートフォリオへようこそ</h1>
-      <h2>--SNSアカウント一覧--</h2>
+      <h2>--SNSアカウント一覧-</h2>
       <div className="iconList">
         <SNSIcon
         img={github}
