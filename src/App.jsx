@@ -14,21 +14,17 @@ function App() {
   const trackRef=useRef(null);
   const [trackWidth,setTrackWidth]=useState(0);
   useEffect(() => {
-  const updateWidth = () => {
-    if (trackRef.current) {
-      const width = trackRef.current.scrollWidth / 2;
-      console.log("measured width:", width);
-      setTrackWidth(width);
-    }
-  };
-  updateWidth();
-  window.addEventListener("resize", updateWidth);
+  if (!trackRef.current) return;
 
-  return () => {
-    window.removeEventListener("resize", updateWidth);
-  };
+  const observer = new ResizeObserver(() => {
+    const width = trackRef.current.scrollWidth / 2;
+    setTrackWidth(width);
+  });
+
+  observer.observe(trackRef.current);
+
+  return () => observer.disconnect();
 }, []);
-
 
   const slides = [
   {
