@@ -42,6 +42,8 @@ function App() {
 ];
   const repeatSlides=Array(12).fill(slides).flat();
   const loopSlides=[...repeatSlides, ...repeatSlides];
+  const speed=50;
+  const duration=trackWidth/speed;
   return (
     <Routes>
       <Route path="/" element={
@@ -50,7 +52,7 @@ function App() {
       <div 
       ref={trackRef}
       className="slide-track"
-      style={{animation:trackWidth?`scroll ${(trackWidth)/30}s linear infinite`:'none'}}
+      style={{animation:trackWidth?`scroll ${duration}s linear infinite`:'none'}}
       >
       {loopSlides.map((slide, i) => (
       <a 
