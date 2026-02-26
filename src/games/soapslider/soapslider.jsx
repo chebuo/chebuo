@@ -10,7 +10,7 @@ const Soapslider=()=>{
     })
     return(
         <>
-            <div>
+            <div className="page-scale">
                 <Header/>
                 <Unity unityProvider={unityProvider} className="unity-canvas" />
                 <Description/>
