@@ -1,6 +1,7 @@
 import {Link} from 'react-router-dom'
 import '../styles/productList.css'
 import soapslider_icon from '../assets/soapslider_icon.jpg'
+import chebusitu_icon from '../assets/chebusitu_icon.png'
 import bigbeetle from '../assets/chebu_fine.jpg'
 
 function ProductList(){
@@ -19,10 +20,10 @@ function ProductList(){
             link='/soapslider'
             />
         <ProductItem
-            title='大きなカブトムシ'
-            img={bigbeetle}
-            description='大きなカブを食べられないようにカブトムシを倒すタワーディフェンスとシューティングゲームを組み合わせたゲームです。'
-            link='https://unityroom.com/games/bigbeetle'
+            title='チェブラーシカから部室を守れ！'
+            img={chebusitu_icon}
+            description='ハッカソンで初めてキャリー枠となって作成した作品です。このゲームはチェブラーシカというキャラクターを使ったミニゲームです。たくさんのかわいいチェブラーシカが登場します。'
+            link='/chebusitu'
             />
         <ProductItem
             title='大きなカブトムシ'

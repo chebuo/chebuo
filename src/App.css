@@ -31,10 +31,10 @@ body{
 }
 @keyframes scroll{
   from{
-    transform:translateX(0);
+    transform:translateX(-33.3333333%);
   }
   to{
-    transform:translateX(-50%);
+    transform:translateX(-66.6666666%);
   }
 }
 .iconList{
