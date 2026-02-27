@@ -21,6 +21,10 @@ export default function History(){
 function HistoryItem(){
   const historyItems=[
     {
+      date :"2025年4月",
+      description:"福岡工業大学に入学"
+    },
+    {
       date:"2025年5月",
       title:"石鹸スライダー",
       img:soapslider_icon,
@@ -49,10 +53,13 @@ function HistoryItem(){
     <>
     {historyItems.map((item,i)=>(
     <div className="history-item" key={i}>
+      {item.title?(
+        <>
       <div className="history-header">
         <span className="history-dot"/>
         <span className="history-date">{item.date}</span>
       </div>
+      
       <div className="history-content">
         <ProductItem
             title={item.title}
@@ -62,6 +69,15 @@ function HistoryItem(){
             link={item.link}
         />
       </div>
+      </>
+      ):(
+        <>
+        <div className="history-header">
+          <span className="history-dot"/>
+          <span className="history-date">{item.date} {item.description}</span>
+        </div>
+        </>
+      )}
     </div>
   ))}
   </>

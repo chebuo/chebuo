@@ -21,7 +21,7 @@
     margin-bottom:40px;
     margin-right:5vw;
 }
-.history-item::after{
+.history-list::after{
     content:"";
     position :absolute;
     left:8px;
