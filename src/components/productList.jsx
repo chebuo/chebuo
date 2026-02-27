@@ -16,19 +16,22 @@ function ProductList(){
         <ProductItem
             title='石鹸スライダー'
             img={soapslider_icon}
-            description='滑り続ける石鹸を障害物をよけるゲームです。'
+            description='開発を始めて一番最初に自分で作った作品です。これは滑り続ける石鹸を操作して障害物をよけるゲームです。'
+            technology={["個人開発","unity"]}
             link='/soapslider'
             />
         <ProductItem
             title='チェブラーシカから部室を守れ！'
             img={chebusitu_icon}
             description='ハッカソンでコーディングをしっかりした初めての作成した作品です。このゲームはチェブラーシカというキャラクターを使ったミニゲームです。たくさんのかわいいチェブラーシカが登場します。'
+            technology={["チーム開発","ハッカソン","unity","DoTween"]}
             link='/chebusitu'
             />
         <ProductItem
             title='大きなカブトムシ'
             img={bigbeetle}
             description='大きなカブを食べられないようにカブトムシを倒すタワーディフェンスとシューティングゲームを組み合わせたゲームです。'
+            technology={["個人開発","unity"]}
             link='https://unityroom.com/games/bigbeetle'
             />
         </div>
@@ -36,19 +39,24 @@ function ProductList(){
     )
 }
 
-function ProductItem({
+export function ProductItem({
     title,
     img,
     description,
+    technology=[],
     link
     }){
     return(
         <Link to={link} className="product-link">
-        <div className="product-item">
             <h3>{title}</h3>
             <img src={img} alt={title} />
             <p>{description}</p>
-        </div>
+            <hr className="partition-line"/>
+            <div className="technology-list">{technology.map((tech,index)=>(
+                <span key={index} className="technology-item">
+                    {tech}
+                </span>
+            ))}</div>
         </Link>
     )
 }
