@@ -36,13 +36,13 @@
 }
 .history-header{
     display:flex;
-    align-items:center;
+    align-items:flex-start;
     position:relative;
 }
 .history-dot{
     width:20px;
     height:20px;
-    top:0;
+    margin-top:10px;
     background:aliceblue;
     border-radius:50%;
     position:relative;
