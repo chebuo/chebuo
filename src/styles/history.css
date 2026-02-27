@@ -18,8 +18,8 @@
 }
 .history-item{
     position:relative;
-    margin-bottom:80px;
-    margin-right:10vw;
+    margin-bottom:40px;
+    margin-right:5vw;
 }
 .history-item::after{
     content:"";
@@ -27,7 +27,7 @@
     left:8px;
     top:24px;
     width:4px;
-    height:115%;
+    height:110%;
     background:aliceblue;
     box-shadow:
         0 0 3px aliceblue,
