@@ -42,6 +42,7 @@
 .history-dot{
     width:20px;
     height:20px;
+    top:0;
     background:aliceblue;
     border-radius:50%;
     position:relative;
