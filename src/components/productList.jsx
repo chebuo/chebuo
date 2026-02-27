@@ -2,7 +2,8 @@ import {Link} from 'react-router-dom'
 import '../styles/productList.css'
 import soapslider_icon from '../assets/soapslider_icon.jpg'
 import chebusitu_icon from '../assets/chebusitu_icon.png'
-import bigbeetle from '../assets/chebu_fine.jpg'
+import bigbeetle_icon from '../assets/bigbeetle_icon.jpg'
+import cooking_icon from '../assets/cooking_icon.png'
 
 function ProductList(){
     return(
@@ -29,10 +30,17 @@ function ProductList(){
             />
         <ProductItem
             title='大きなカブトムシ'
-            img={bigbeetle}
+            img={bigbeetle_icon}
             description='大きなカブを食べられないようにカブトムシを倒すタワーディフェンスとシューティングゲームを組み合わせたゲームです。'
             technology={["個人開発","unity"]}
             link='https://unityroom.com/games/bigbeetle'
+            />
+        <ProductItem
+        title='15秒クッキング'
+        img={cooking_icon}
+        description='大きなカブを食べられないようにカブトムシを倒すタワーディフェンスとシューティングゲームを組み合わせたゲームです。'
+        technology={["チーム開発","unity"]}
+        link='/cooking'
             />
         </div>
         </>

@@ -5,7 +5,8 @@ import {ProductItem} from '../components/productList.jsx'
 
 import soapslider_icon from '../assets/soapslider_icon.jpg'
 import chebusitu_icon from '../assets/chebusitu_icon.png'
-import bigbeetle_icon from '../assets/chebu_fine.jpg'
+import bigbeetle_icon from '../assets/bigbeetle_icon.jpg'
+import cooking_icon from '../assets/cooking_icon.png'
  
 export default function History(){
   return(
@@ -31,6 +32,14 @@ function HistoryItem(){
       description:"開発を始めて一番最初に自分で作った作品です。これは滑り続ける石鹸を操作して障害物をよけるゲームです。",
       technology:["個人開発","unity"],
       link:"/soapslider"
+    },
+    {
+      date:"2025年8月",
+      title:"15秒クッキング",
+      img:cooking_icon,
+      description:"",
+      technology:["チーム開発","unity"],
+      link:"/cooking"
     },
     {
       date:"2025年9月",

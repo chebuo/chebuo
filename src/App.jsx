@@ -1,12 +1,18 @@
 import { useRef, useState ,useEffect} from 'react'
 import {Routes,Route,Link} from 'react-router-dom'
 import './App.css'
+
 import ProductList from './components/productList.jsx'
 import History from './pages/history.jsx'
 import Soapslider from './games/soapslider/soapslider.jsx'
+import Bigbeetle from './games/bigbeetle/bigbeetle.jsx'
+import Cooking from './games/cooking/cooking.jsx'
 import Chebusitu from './games/chebusitu/chebusitu.jsx'
-import chebu from './assets/chebu_fine.jpg'
-import chebu_yellow from './assets/yellow_chebu.jpg'
+
+import soapslider_icon from './assets/soapslider_icon.jpg'
+import bigbeetle_icon from './assets/bigbeetle_icon.jpg'
+import cooking_icon from './assets/cooking_icon.png'
+import chebusitu_icon from './assets/chebusitu_icon.png'
 import github from './assets/github_icon.png'
 import x from './assets/x_icon.png'
 import unityroom from './assets/unityroom_icon.jpg'
@@ -29,12 +35,20 @@ function App() {
 
   const slides = [
   {
-    img: chebu,
-    link: "https://ja.wikipedia.org/wiki/%E3%83%81%E3%82%A7%E3%83%96%E3%83%A9%E3%83%BC%E3%82%B7%E3%82%AB"
+    img: soapslider_icon,
+    link: "/soapslider"
   },
   {
-    img: chebu_yellow,
-    link: "https://dash.cloudflare.com/e6ab8471d01bc4780a69c6978ce2f252/pages/view/chebuo"
+    img:bigbeetle_icon,
+    link:"/bigbeetle"
+  },
+  {
+    img:cooking_icon,
+    link:"/cooking"
+  },
+  {
+    img: chebusitu_icon,
+    link: "/chebusitu"
   }
 ];
   const repeatSlides=Array(12).fill(slides).flat();
@@ -52,14 +66,13 @@ function App() {
       style={{animation:trackWidth?`scroll ${duration}s linear infinite`:'none'}}
       >
       {loopSlides.map((slide, i) => (
-      <a 
+      <Link
         key={i}
-        href={slide.link}
-        target="_blank"
+        to={slide.link}
         rel="noopener noreferrer"
         >
-          <img src={slide.img} alt={i % 2 === 0 ? "chebu" : "chebu_yellow"} className="slide-img" />     
-        </a>
+          <img src={slide.img} className="slide-img" />     
+        </Link>
       ))}
       </div>
     </div>
@@ -88,6 +101,8 @@ function App() {
     }/>
     <Route path="/history" element={<History/>}/>
     <Route path="/soapslider" element={<Soapslider/>}></Route>
+    <Route path="/bigbeetle" element={<Bigbeetle/>}></Route>
+    <Route path="/cooking" element={<Cooking/>}></Route>
     <Route path="/chebusitu" element={<Chebusitu/>}></Route>
     </Routes>
   )
