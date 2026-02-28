@@ -4,6 +4,7 @@ import soapslider_icon from '../assets/soapslider_icon.jpg'
 import chebusitu_icon from '../assets/chebusitu_icon.png'
 import bigbeetle_icon from '../assets/bigbeetle_icon.jpg'
 import cooking_icon from '../assets/cooking_icon.png'
+import cheburashka_icon from '../assets/cheburashka_icon.png'
 
 function ProductList(){
     return(
@@ -41,6 +42,13 @@ function ProductList(){
         description='大きなカブを食べられないようにカブトムシを倒すタワーディフェンスとシューティングゲームを組み合わせたゲームです。'
         technology={["チーム開発","unity"]}
         link='/cooking'
+            />
+        <ProductItem
+        title='チェブラーシカ'
+        img={cheburashka_icon}
+        description=''
+        technology={["個人開発","blender"]}
+        link='/cheburashka'
             />
         </div>
         </>

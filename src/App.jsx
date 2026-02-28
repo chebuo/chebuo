@@ -8,11 +8,13 @@ import Soapslider from './games/soapslider/soapslider.jsx'
 import Bigbeetle from './games/bigbeetle/bigbeetle.jsx'
 import Cooking from './games/cooking/cooking.jsx'
 import Chebusitu from './games/chebusitu/chebusitu.jsx'
+import Cheburashka from './games/cheburashka/cheburashka.jsx'
 
 import soapslider_icon from './assets/soapslider_icon.jpg'
 import bigbeetle_icon from './assets/bigbeetle_icon.jpg'
 import cooking_icon from './assets/cooking_icon.png'
 import chebusitu_icon from './assets/chebusitu_icon.png'
+import cheburashka_icon from './assets/cheburashka_icon.png'
 import github from './assets/github_icon.png'
 import x from './assets/x_icon.png'
 import unityroom from './assets/unityroom_icon.jpg'
@@ -49,6 +51,10 @@ function App() {
   {
     img: chebusitu_icon,
     link: "/chebusitu"
+  },
+  {
+    img:cheburashka_icon,
+    link:"/cheburashka"
   }
 ];
   const repeatSlides=Array(12).fill(slides).flat();
@@ -77,7 +83,7 @@ function App() {
       </div>
     </div>
       <h1>chebuoのポートフォリオへようこそ</h1>
-      <h2>--SNSアカウント一覧-</h2>
+      <h2>--SNSアカウント一覧--</h2>
       <div className="iconList">
         <SNSIcon
         img={github}
@@ -104,6 +110,8 @@ function App() {
     <Route path="/bigbeetle" element={<Bigbeetle/>}></Route>
     <Route path="/cooking" element={<Cooking/>}></Route>
     <Route path="/chebusitu" element={<Chebusitu/>}></Route>
+
+    <Route path="/cheburashka" element={<Cheburashka/>}></Route>
     </Routes>
   )
 }
