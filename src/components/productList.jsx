@@ -11,15 +11,17 @@ function ProductList(){
             </button>  
         </Link>
         <div className="product-list">
-            {data.map((data,i)=>(
+            {data.map((item,i)=>
+                item.title &&(
                 <ProductItem key={i}
-            title={data.title}
-            img={data.icon}
-            description={data.description}
-            technology={data.technology}
-            link={data.path}
+            title={item.title}
+            img={item.icon}
+            description={item.description}
+            technology={item.technology}
+            link={item.path}
             />
-            ))}
+            )
+            )}
         </div>
         </>
     )
