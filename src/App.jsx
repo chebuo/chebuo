@@ -1,20 +1,11 @@
 import { useRef, useState ,useEffect} from 'react'
 import {Routes,Route,Link} from 'react-router-dom'
 import './App.css'
+import {data} from './data/projects.js'
 
 import ProductList from './components/productList.jsx'
 import History from './pages/history.jsx'
-import Soapslider from './games/soapslider/soapslider.jsx'
-import Bigbeetle from './games/bigbeetle/bigbeetle.jsx'
-import Cooking from './games/cooking/cooking.jsx'
-import Chebusitu from './games/chebusitu/chebusitu.jsx'
-import Cheburashka from './games/cheburashka/cheburashka.jsx'
 
-import soapslider_icon from './assets/soapslider_icon.jpg'
-import bigbeetle_icon from './assets/bigbeetle_icon.jpg'
-import cooking_icon from './assets/cooking_icon.png'
-import chebusitu_icon from './assets/chebusitu_icon.png'
-import cheburashka_icon from './assets/cheburashka_icon.png'
 import github from './assets/github_icon.png'
 import x from './assets/x_icon.png'
 import unityroom from './assets/unityroom_icon.jpg'
@@ -35,29 +26,7 @@ function App() {
   return () => observer.disconnect();
 }, []);
 
-  const slides = [
-  {
-    img: soapslider_icon,
-    link: "/soapslider"
-  },
-  {
-    img:bigbeetle_icon,
-    link:"/bigbeetle"
-  },
-  {
-    img:cooking_icon,
-    link:"/cooking"
-  },
-  {
-    img: chebusitu_icon,
-    link: "/chebusitu"
-  },
-  {
-    img:cheburashka_icon,
-    link:"/cheburashka"
-  }
-];
-  const repeatSlides=Array(12).fill(slides).flat();
+  const repeatSlides=Array(12).fill(data).flat();
   const loopSlides=[...repeatSlides, ...repeatSlides];
   const speed=50;
   const duration=trackWidth/speed;
@@ -74,10 +43,10 @@ function App() {
       {loopSlides.map((slide, i) => (
       <Link
         key={i}
-        to={slide.link}
+        to={slide.path}
         rel="noopener noreferrer"
         >
-          <img src={slide.img} className="slide-img" />     
+          <img src={slide.icon} className="slide-img" />     
         </Link>
       ))}
       </div>
@@ -105,14 +74,11 @@ function App() {
       <ProductList/>
     </>   
     }/>
-    <Route path="/history" element={<History/>}/>
-    <Route path="/soapslider" element={<Soapslider/>}></Route>
-    <Route path="/bigbeetle" element={<Bigbeetle/>}></Route>
-    <Route path="/cooking" element={<Cooking/>}></Route>
-    <Route path="/chebusitu" element={<Chebusitu/>}></Route>
-
-    <Route path="/cheburashka" element={<Cheburashka/>}></Route>
-    </Routes>
+    <Route path="/history" element={<History/>}></Route>
+    {data.map((data)=>(
+      <Route path={data.path} element={<data.element/>}></Route>
+    ))}
+   </Routes>
   )
 }
 

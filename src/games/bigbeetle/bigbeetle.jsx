@@ -42,7 +42,7 @@ const Description=({onFullscreen})=>{
             </ul>
             <h2>使用技術</h2>
             <ul>
-                <li>unity</li>
+                <li>unity,UI Tool Kit,ObjectPool</li>
             </ul>
             <h2>制作背景</h2>
             <ul>
