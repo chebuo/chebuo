@@ -22,11 +22,11 @@ export default function History(){
 function HistoryItem(){
   const historyItems=[
     {
-      date :"2025年4月",
+      date :"2024年4月",
       description:"福岡工業大学に入学"
     },
     {
-      date:"2025年5月",
+      date:"2024年5月",
       title:"石鹸スライダー",
       img:soapslider_icon,
       description:"開発を始めて一番最初に自分で作った作品です。これは滑り続ける石鹸を操作して障害物をよけるゲームです。",
@@ -34,15 +34,7 @@ function HistoryItem(){
       link:"/soapslider"
     },
     {
-      date:"2025年8月",
-      title:"15秒クッキング",
-      img:cooking_icon,
-      description:"",
-      technology:["チーム開発","unity"],
-      link:"/cooking"
-    },
-    {
-      date:"2025年9月",
+      date:"2024年7月",
       title:"大きなカブトムシ",
       img:bigbeetle_icon,
       description:'大きなカブを食べられないようにカブトムシを倒すタワーディフェンスとシューティングゲームを組み合わせたゲームです。',
@@ -50,7 +42,15 @@ function HistoryItem(){
       link:"/bigbeetle"
     },
     {
-      date:"2025年11月",
+      date:"2024年8月",
+      title:"15秒クッキング",
+      img:cooking_icon,
+      description:"",
+      technology:["チーム開発","unity"],
+      link:"/cooking"
+    },
+    {
+      date:"2024年11月",
       title:"チェブラーシカから部室を守れ！！",
       img:chebusitu_icon,
       description:'ハッカソンでコーディングをしっかりした初めての作成した作品です。このゲームはチェブラーシカというキャラクターを使ったミニゲームです。たくさんのかわいいチェブラーシカが登場します。',

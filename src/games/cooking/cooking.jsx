@@ -2,7 +2,7 @@ import {Unity,useUnityContext}from 'react-unity-webgl'
 import "../gamePage.css"
 
 const Cooking=()=>{
-    const {unityProvider,sendMessage}=useUnityContext({
+    const {unityProvider,requestFullscreen}=useUnityContext({
         loaderUrl:"build/Cooking.loader.js",
         dataUrl:"build/Cooking.data",
         frameworkUrl:"build/Cooking.framework.js",
@@ -13,7 +13,7 @@ const Cooking=()=>{
             <div className="page-scale">
                 <Header/>
                 <Unity unityProvider={unityProvider} className="unity-canvas" />
-                <Description/>
+                <Description onFullscreen={()=>requestFullscreen(true)}/>
             </div>
         </>  
 )}
@@ -24,9 +24,10 @@ const Header=()=>{
         </div>
     )
 }
-const Description=()=>{
+const Description=({onFullscreen})=>{
     return(
         <div>
+            <button onClick={onFullscreen} className="fullscreen-button">全画面で遊ぶ</button>
             <h2>ゲーム概要</h2>
             <ul>
                 <li>このゲームは2D横スクロールRUNゲームです。</li>
