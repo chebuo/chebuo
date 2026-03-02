@@ -1,0 +1,10 @@
+.unity-canvas{
+    width:75vw;
+    aspect-ratio:16/9;
+}
+.page-scale{
+    padding-bottom:200px;
+}
+.fullscreen-button{
+    margin-top:5px;
+}
