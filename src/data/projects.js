@@ -6,6 +6,7 @@ import Chebusitu from '../products/chebusitu.jsx'
 import Kirby from '../products/kirby.jsx'
 import Cheburashka from '../products/cheburashka.jsx'
 import Arcodemodel from '../products/arcodemodel.jsx'
+import Arnavigator from '../products/arnavigator.jsx'
 import Kurimanju from '../products/kurimanju.jsx'
 import Limit_diary from '../products/limit_diary.jsx'
 
@@ -17,6 +18,7 @@ import pacman_icon from '../assets/pacman_icon.png'
 import kirby_icon from '../assets/kirby_icon.png'
 import cheburashka_icon from '../assets/cheburashka_icon.png'
 import arcodemodel_icon from '../assets/arcodemodel_icon.png'
+import arnavigator_icon from '../assets/arnavigator_icon.png'
 import kurimanju_icon from '../assets/kurimanju_icon.png'
 import limit_diary_icon from '../assets/limit_diary_icon.png'
 
@@ -93,9 +95,18 @@ export const data=[
         title:"A-Flame触ってみた",
         icon:arcodemodel_icon,
         description:"",
-        technology:["個人開発","A-Flame","gitpages"],
+        technology:["個人開発","A-Flame","AR.js","gitpages"],
         path:"/arcodemodel",
         element:Arcodemodel
+    },
+    {
+        date:"2025年2月",
+        title:"ARナビゲーター",
+        icon:arnavigator_icon,
+        description:"",
+        technology:["チーム開発","JavaScript","A-Flame","AR.js"],
+        path:"/arnavigator",
+        element:Arnavigator
     },
     {
         date:"2025年3月",
