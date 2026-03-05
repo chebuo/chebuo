@@ -3,8 +3,8 @@ import { Pagination, Mousewheel,Keyboard,Navigation,  } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "./gamePage.css"
-import "./slidePage.css"
+import "../style/gamePage.css"
+import "../style/slidePage.css"
 
 import slide_1 from '../assets/arnavigator_1.png'
 import slide_2 from '../assets/arnavigator_2.png'
@@ -40,7 +40,7 @@ const Description=()=>{
             </ul>
             <h2>使用技術</h2>
             <ul>
-                <li>JavaScript,A-Flame,AR.js,Google cloud API</li>
+                <li>JavaScript,A-Flame,AR.js,Google cloud API,gitpages</li>
             </ul>
             <h2>制作背景</h2>
             <ul>

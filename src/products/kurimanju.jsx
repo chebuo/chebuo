@@ -1,5 +1,5 @@
 import "@google/model-viewer"
-import "./modelPage.css"
+import "../style/modelPage.css"
 import kurimanju from '../assets/models/kurimanju.glb?url'
 
 const Kurimanju=()=>{

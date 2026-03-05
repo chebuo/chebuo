@@ -104,9 +104,16 @@ export const data=[
         title:"ARナビゲーター",
         icon:arnavigator_icon,
         description:"",
-        technology:["チーム開発","JavaScript","A-Flame","AR.js"],
+        technology:["チーム開発","ハッカソン","JavaScript","A-Flame","AR.js","gitpages"],
         path:"/arnavigator",
         element:Arnavigator
+    },
+    {
+        date:"2025年2月",
+        title:"MUSIC SEARCHER",
+        icon:musicsearcher_icon,
+        
+        
     },
     {
         date:"2025年3月",
