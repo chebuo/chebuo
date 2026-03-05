@@ -1,5 +1,5 @@
 import "@google/model-viewer"
-import "../style/modelPage.css"
+import "../styles/modelPage.css"
 import kirby from '../assets/models/kirby.glb?url'
 
 const Kirby=()=>{

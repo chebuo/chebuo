@@ -1,5 +1,5 @@
 import "@google/model-viewer"
-import "../style/modelPage.css"
+import "../styles/modelPage.css"
 import pacman from '../assets/models/PAC-MAN.glb?url'
 
 const Pacman=()=>{

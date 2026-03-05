@@ -109,13 +109,6 @@ export const data=[
         element:Arnavigator
     },
     {
-        date:"2025年2月",
-        title:"MUSIC SEARCHER",
-        icon:musicsearcher_icon,
-        
-        
-    },
-    {
         date:"2025年3月",
         title:"くりまんじゅうの3Dモデル",
         icon:kurimanju_icon,

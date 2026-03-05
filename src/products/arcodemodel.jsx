@@ -1,5 +1,5 @@
 import armakerImage from '../assets/armaker.png'
-import "./modelPage.css"
+import "../styles/modelPage.css"
 
 const Arcodemodel=()=>{
     return(

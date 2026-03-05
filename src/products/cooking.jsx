@@ -1,5 +1,5 @@
 import {Unity,useUnityContext}from 'react-unity-webgl'
-import "../style/gamePage.css"
+import "../styles/gamePage.css"
 
 const Cooking=()=>{
     const {unityProvider,requestFullscreen}=useUnityContext({

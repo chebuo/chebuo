@@ -1,5 +1,5 @@
 import "@google/model-viewer"
-import "../style/modelPage.css"
+import "../styles/modelPage.css"
 import cheburashka from '../assets/models/Cheburashka.glb?url'
 
 const Cheburashka=()=>{

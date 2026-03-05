@@ -6,8 +6,6 @@ import {data} from './data/projects.js'
 import ProductList from './components/productList.jsx'
 import History from './pages/history.jsx'
 
-import Artest from './pages/artest.jsx'
-
 import github from './assets/github_icon.png'
 import x from './assets/x_icon.png'
 import unityroom from './assets/unityroom_icon.jpg'
@@ -81,7 +79,11 @@ function App() {
       <Route path={data.path} element={<data.element/>}></Route>
     ))}
 
-    <Route path="/eight_wall" element={<Artest/>}></Route>
+    <Route path="/eight_wall" element={<iframe
+  src="https://chebuo.vercel.app/eight_wall"
+  allowfullscreen
+  allow="camera; microphone; geolocation; accelerometer; magnetometer; gyroscope; autoplay; clipboard-read; clipboard-write; fullscreen"
+></iframe>}></Route>
    </Routes>
   )
 }

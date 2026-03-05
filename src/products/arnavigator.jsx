@@ -3,8 +3,8 @@ import { Pagination, Mousewheel,Keyboard,Navigation,  } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "../style/gamePage.css"
-import "../style/slidePage.css"
+import "../styles/gamePage.css"
+import "../styles/slidePage.css"
 
 import slide_1 from '../assets/arnavigator_1.png'
 import slide_2 from '../assets/arnavigator_2.png'
