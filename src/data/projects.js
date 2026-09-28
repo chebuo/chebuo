@@ -11,6 +11,9 @@ import Music_searcher from '../products/music_searcher.jsx'
 import Kurimanju from '../products/kurimanju.jsx'
 import Limit_diary from '../products/limit_diary.jsx'
 import Bigbeetle_full from '../products/bigbeetle_full.jsx'
+import MyMemo from '../products/mymemo.jsx'
+import ChebuWartsLegacy from '../products/ChebuWartsLegacy.jsx'
+import FishRamble from '../products/FishGramble.jsx'
 
 import soapslider_icon from '../assets/soapslider_icon.jpg'
 import bigbeetle_icon from '../assets/bigbeetle_icon.jpg'
@@ -30,6 +33,7 @@ import baseball_icon from '../assets/3Dbaseball_icon.png'
 import daychangebattle_icon from '../assets/daychangebattle_icon.png'
 import mymemo_icon from '../assets/mymemo_icon.png'
 import chebuwarts_icon from '../assets/chebuwarts_icon.png'
+import fishRamble_icon from '../assets/fishRamble_icon.png'
 
 export const data=[
     {
@@ -203,7 +207,8 @@ export const data=[
         icon:mymemo_icon,
         description:"mymemo",
         technology:["チーム開発","chrome","React","JavaScript","node.js","supabase","render"],
-        path:"https://topaz.dev/projects/87928934cc46cbeb3056"
+        path:"/Mymemo",
+        element:MyMemo
     },
     {
         date:"2026年3月",
@@ -215,6 +220,16 @@ export const data=[
         icon:chebuwarts_icon,
         description:"",
         technology:["チーム開発","ハッカソン","unity","VR"],
-        path:"https://topaz.dev/projects/9ae51df3f2987dd2d0b5"
-    }
+        path:"/ChebuWartsLegacy",
+        element:ChebuWartsLegacy
+    },
+    {
+        date:"2026年6月",
+        title:"FishGramble!!",
+        icon:fishRamble_icon,
+        description:"",
+        technology:["チーム開発","unity","UIToolKit","ObjectPool","scriptableObject","Input System"],
+        path:"/FishGramble",
+        element:FishRamble
+    },
 ]
