@@ -263,7 +263,7 @@ export const data=[
         title:"FishGramble!!",
         icon:fishRamble_icon,
         description:"",
-        technology:["チーム開発","unity","UIToolKit","ObjectPool","scriptableObject","Shader Graph","Input System"],
+        technology:["チーム開発","ハッカソン","unity","Shader Graph","VFX","Input System"],
         path:"/FishGramble",
         element:FishRamble
     },
