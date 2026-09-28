@@ -1,4 +1,5 @@
 import Soapslider from '../products/soapslider.jsx'
+import PosingEffect from '../products/posingEffect.jsx'
 import Bigbeetle from '../products/bigbeetle.jsx'
 import Cooking from '../products/cooking.jsx'
 import Pacman from '../products/pacman.jsx'
@@ -9,13 +10,19 @@ import Arcodemodel from '../products/arcodemodel.jsx'
 import Arnavigator from '../products/arnavigator.jsx'
 import Music_searcher from '../products/music_searcher.jsx'
 import Kurimanju from '../products/kurimanju.jsx'
+import Kisyotenchebu from '../products/kisyotenchebu.jsx'
 import Limit_diary from '../products/limit_diary.jsx'
+import Baseball from '../products/baseball.jsx'
 import Bigbeetle_full from '../products/bigbeetle_full.jsx'
+import MemoBattle from '../products/memoBattle.jsx'
 import MyMemo from '../products/mymemo.jsx'
 import ChebuWartsLegacy from '../products/ChebuWartsLegacy.jsx'
+import Sushi from '../products/sushi.jsx'
 import FishRamble from '../products/FishGramble.jsx'
+import Robbery from '../products/robbery.jsx'
 
 import soapslider_icon from '../assets/soapslider_icon.jpg'
+import posingEffect_icon from '../assets/posingEffect_icon.png'
 import bigbeetle_icon from '../assets/bigbeetle_icon.jpg'
 import cooking_icon from '../assets/cooking_icon.png'
 import chebusitu_icon from '../assets/chebusitu_icon.png'
@@ -33,7 +40,9 @@ import baseball_icon from '../assets/3Dbaseball_icon.png'
 import daychangebattle_icon from '../assets/daychangebattle_icon.png'
 import mymemo_icon from '../assets/mymemo_icon.png'
 import chebuwarts_icon from '../assets/chebuwarts_icon.png'
+import sushi_icon from  '../assets/sushi_icon.png'
 import fishRamble_icon from '../assets/fishRamble_icon.png'
+import robbery_icon from '../assets/robbery_icon.jpg'
 
 export const data=[
     {
@@ -51,7 +60,12 @@ export const data=[
     },
     {
         date:"2024年6月",
-        description:"posingEffect"
+        title:"PosingEffect",
+        icon:posingEffect_icon,
+        description:"",
+        technology:["チーム開発","unity","python"],
+        path:"/posingEffect",
+        element:PosingEffect
     },
     {
         date:"2024年7月",
@@ -149,7 +163,8 @@ export const data=[
         icon:kisyoutenchebu_icon,
         description:"",
         technology:["チーム開発","ハッカソン","unity","LootLocker"],
-        path:"https://topaz.dev/projects/823ec14b566f82b8305b"
+        path:"/Kisyotenchebu",
+        element:Kisyotenchebu
     },
     {
         date:"2025年6月",
@@ -178,7 +193,8 @@ export const data=[
         icon:baseball_icon,
         description:"3Dbaseball",
         technology:["チーム開発","React","TypeScript","three.js","vrm","vercel"],
-        path:"https://topaz.dev/projects/203a12f0e3847d71c3cd"
+        path:"/baseball",
+        element:Baseball
     },
     {
         date:"2025年9月",
@@ -186,7 +202,8 @@ export const data=[
         icon:daychangebattle_icon,
         description:"",
         technology:["チーム開発","ハッカソン","html","css","javascript","firebase","firestore"],
-        path:"https://topaz.dev/projects/abe903ec92ba26ec9128"
+        path:"/memoBattle",
+        element:MemoBattle
     },
     {
         date:"2025年10月",
@@ -224,6 +241,15 @@ export const data=[
         element:ChebuWartsLegacy
     },
     {
+        date:"2026年5月",
+        title:"寿司すぎて悦",
+        icon:sushi_icon,
+        description:"",
+        technology:["チーム開発","ハッカソン","unity","ECS","Job System","Burst","LOD"],
+        path:"/Sushi",
+        element:Sushi
+    },
+    {
         date:"2026年6月",
         title:"FishGramble!!",
         icon:fishRamble_icon,
@@ -232,4 +258,13 @@ export const data=[
         path:"/FishGramble",
         element:FishRamble
     },
+    {
+        date:"2026年9月",
+        title:"カジュアル強盗",
+        icon:robbery_icon,
+        description:"",
+        technology:["チーム開発","unity","UniTask","blender","Input System"],
+        path:"/robbery",
+        element:Robbery
+    }
 ]
