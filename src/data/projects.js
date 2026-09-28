@@ -40,6 +40,7 @@ import baseball_icon from '../assets/3Dbaseball_icon.png'
 import daychangebattle_icon from '../assets/daychangebattle_icon.png'
 import mymemo_icon from '../assets/mymemo_icon.png'
 import chebuwarts_icon from '../assets/chebuwarts_icon.png'
+import flappyChebu_icon from '../assets/flappyChebu_icon.png'
 import sushi_icon from  '../assets/sushi_icon.png'
 import fishRamble_icon from '../assets/fishRamble_icon.png'
 import robbery_icon from '../assets/robbery_icon.jpg'
@@ -241,6 +242,14 @@ export const data=[
         element:ChebuWartsLegacy
     },
     {
+        date:"2026年4月",
+        title:"Flappy Chebu",
+        icon:flappyChebu_icon,
+        description:"",
+        technology:["個人開発","unity","3Das2D","2DLight","Shader Graph"],
+        path:"https://unityroom.com/games/flappy_chabu"
+    },
+    {
         date:"2026年5月",
         title:"寿司すぎて悦",
         icon:sushi_icon,
@@ -254,7 +263,7 @@ export const data=[
         title:"FishGramble!!",
         icon:fishRamble_icon,
         description:"",
-        technology:["チーム開発","unity","UIToolKit","ObjectPool","scriptableObject","Input System"],
+        technology:["チーム開発","unity","UIToolKit","ObjectPool","scriptableObject","Shader Graph","Input System"],
         path:"/FishGramble",
         element:FishRamble
     },
@@ -263,7 +272,7 @@ export const data=[
         title:"カジュアル強盗",
         icon:robbery_icon,
         description:"",
-        technology:["チーム開発","unity","UniTask","blender","Input System"],
+        technology:["チーム開発","unity","UniTask","blender","Shader Graph","Input System"],
         path:"/robbery",
         element:Robbery
     }
