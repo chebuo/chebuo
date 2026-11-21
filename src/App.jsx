@@ -10,6 +10,7 @@ import github from './assets/github_icon.png'
 import x from './assets/x_icon.png'
 import unityroom from './assets/unityroom_icon.jpg'
 import qiita from './assets/qiita_icon.png'
+import topaz from './assets/topaz_icon.png'
 
 function App() {
   const trackRef=useRef(null);
@@ -74,6 +75,11 @@ function App() {
         img={qiita}
         link="https://qiita.com/chebuo_"
         name="Qiita"
+        />
+        <SNSIcon
+        img={topaz}
+        link="https://topaz.dev/chebuo"
+        name="Topa`z"
         />
       </div>
       <h2>--成果物一覧--</h2> 
